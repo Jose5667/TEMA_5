@@ -8,13 +8,17 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(new Dibujar(this));
+        View spin = new Dibujar(this);
+        setContentView(spin);
+//        spin.startAnimation(AnimationUtils.loadAnimation(this, R.anim.rotate));
+        spin.startAnimation(AnimationUtils.loadAnimation(this, R.anim.alpha));
     }
 }
 

@@ -27,6 +27,19 @@ class Dibujar extends View{
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+
+        pincel.setColor(Color.RED);
+        pincel.setStrokeWidth(10);
+        pincel.setStyle(Paint.Style.FILL);
+        canvas.drawRect(400,400,200,200,pincel);
+
+        pincel.setColor(Color.WHITE);
+        pincel.setStyle(Paint.Style.FILL);
+        canvas.drawCircle(200,200,100,pincel);
+        canvas.drawCircle(200,400,100,pincel);
+        canvas.drawCircle(400,400,100,pincel);
+        canvas.drawCircle(400,200,100,pincel);
+
         pincel.setColor(Color.BLUE);
         pincel.setStrokeWidth(10);
         pincel.setStyle(Paint.Style.STROKE);

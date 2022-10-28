@@ -45,5 +45,9 @@ class Dibujar extends View{
         pincel.setStyle(Paint.Style.STROKE);
         canvas.drawCircle(300,300,90,pincel);
 
+        pincel.setColor(Color.BLUE);
+        pincel.setStyle(Paint.Style.FILL);
+        pincel.setTextSize(50);
+        canvas.drawText("C E S T E",400,320,pincel);
     }
 }

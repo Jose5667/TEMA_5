@@ -18,7 +18,9 @@ public class MainActivity extends AppCompatActivity {
         View spin = new Dibujar(this);
         setContentView(spin);
 //        spin.startAnimation(AnimationUtils.loadAnimation(this, R.anim.rotate));
-        spin.startAnimation(AnimationUtils.loadAnimation(this, R.anim.alpha));
+       // spin.startAnimation(AnimationUtils.loadAnimation(this, R.anim.alpha));
+//       spin.startAnimation(AnimationUtils.loadAnimation(this,R.anim.traslate));
+        spin.startAnimation(AnimationUtils.loadAnimation(this,R.anim.scale));
     }
 }
 
